@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop sweep</title>
+</head>
+
+<body>
+    <canvas id="stars-canvas"></canvas>
+
+    <header>
+        <div class="header-content">
+            <h1>sweep Code</h1>
+            <div>
+                <input type="text" placeholder="Tìm kiếm..." id="search-box" />
+                <button id="donate-btn" class="donate-btn">☕ Donate</button>
+            </div>
+
+            <div id="donate-modal" class="modal-overlay">
+                <div class="modal-content">
+                    <span class="close-btns" id="close-modal">&times;</span>
+                    <h2>Cảm ơn bạn đã ủng hộ!</h2>
+                    <p>Chuyển khoản<strong> 0853 261 605</br> Đặng Vũ</strong></p>
+                    <p>Hoặc quét mã QR bên dưới:</p>
+                    <img src="./image/qr.jpg" alt="QR Code" style="width: 150px;" />
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="hot-products">
+        <h2 style="text-align:center; color: #fff;">Source được quan tâm nhiều nhất</h2>
+        <div class="hot-carousel-wrapper">
+            <div class="hot-carousel" id="hot-product-list"></div>
+        </div>
+    </section>
+
+    <h2 style="text-align:center; color: #fff;">Tất cả source</h2>
+    <section class="product-list" id="product-list"></section>
+    <div id="pagination"></div>
+
+    <div id="contact-form">
+        <div id="form-content">
+            <h2><span id="selected-product"></span></h2>
+
+            <p id="product-full-description"></p>
+
+            <p id="download-instruction"></p>
+
+            <div class="form-actions">
+                <button class="close-btn" onclick="closeForm()">Đóng</button>
+                <a href="#" target="_blank" id="payment-link">Mở</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 DevPan Code. Nơi hội tụ những Source Code chất lượng.
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
